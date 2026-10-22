@@ -1,7 +1,7 @@
 .accordion .accordion-item {
   border: 1px solid #ddd;
   border-radius: 5px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   background: #fff;
   overflow: hidden;
 }
@@ -11,25 +11,25 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 18px 28px;
+  padding: 12px 18px;
   border: none;
   background: #fff;
   color: #222;
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   cursor: pointer;
 }
 
 .accordion .accordion-icon {
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   border-right: 1.5px solid #222;
   border-bottom: 1.5px solid #222;
   transform: rotate(45deg);
   transition: transform 0.2s ease;
   flex-shrink: 0;
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .accordion .accordion-question[aria-expanded="true"] .accordion-icon {
@@ -44,4 +44,17 @@
 
 .accordion .accordion-answer[hidden] {
   display: none;
+}
+
+/* Reduce Accordion Width */
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 0;
+}
+
+/* Keep each accordion item within the width */
+.accordion .accordion-item {
+  width: 100%;
+  box-sizing: border-box;
 }
