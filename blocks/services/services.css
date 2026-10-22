@@ -21,14 +21,28 @@
 }
 
 .services .services-container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 24px;
+  gap: 20px;
 }
 
 .services .service-card {
+  min-height: 230px;
+  padding: 28px 20px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 5px 25px rgb(0 0 0 / 7%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* .services .service-card {
   min-height: 265px;
   padding: 36px 24px;
   background: #fff;
@@ -37,11 +51,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
+} */
 
 .services .service-icon {
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   margin-bottom: 18px;
 }
 
