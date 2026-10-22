@@ -58,3 +58,32 @@
   width: 40%;
   box-sizing: border-box;
 }
+
+/* Reduce Accordion Width */
+.accordion {
+  width: 100%;
+  max-width: 650px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Accordion items */
+.accordion .accordion-item {
+  width: 100%;
+  max-width: 650px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+/* Question button */
+.accordion .accordion-question {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 20px;
+}
+
+/* Answer content */
+.accordion .accordion-answer {
+  box-sizing: border-box;
+  padding: 0 20px 16px;
+}
