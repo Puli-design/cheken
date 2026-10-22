@@ -69,3 +69,42 @@
     min-height: 180px;
   }
 }
+
+/* Statistics Card Hover Effect */
+.stats .stats-card {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover: Blue background */
+.stats .stats-card:hover {
+  background-color: #075bd8;
+  border-color: #075bd8;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(7, 91, 216, 0.25);
+}
+
+/* Icon hover */
+.stats .stats-card:hover .stats-icon img {
+  filter: brightness(0) invert(1);
+}
+
+/* Number hover */
+.stats .stats-card:hover .stats-value {
+  color: #ffffff;
+}
+
+/* Label hover */
+.stats .stats-card:hover .stats-label {
+  color: #ffffff;
+}
+
+/* Smooth transition */
+.stats .stats-icon img,
+.stats .stats-value,
+.stats .stats-label {
+  transition: all 0.3s ease;
+}

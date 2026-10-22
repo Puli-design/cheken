@@ -94,3 +94,42 @@
     min-height: 220px;
   }
 }
+
+/* Services Card Hover Effect */
+.services .service-card {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Blue background on hover */
+.services .service-card:hover {
+  background-color: #075bd8;
+  border-color: #075bd8;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(7, 91, 216, 0.25);
+}
+
+/* Icon hover */
+.services .service-card:hover .service-icon img {
+  filter: brightness(0) invert(1);
+}
+
+/* Heading hover */
+.services .service-card:hover h3 {
+  color: #ffffff;
+}
+
+/* Description hover */
+.services .service-card:hover p {
+  color: #ffffff;
+}
+
+/* Smooth transitions */
+.services .service-icon img,
+.services .service-card h3,
+.services .service-card p {
+  transition: all 0.3s ease;
+}
