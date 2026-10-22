@@ -55,6 +55,6 @@
 
 /* Keep each accordion item within the width */
 .accordion .accordion-item {
-  width: 100%;
+  width: 40%;
   box-sizing: border-box;
 }
