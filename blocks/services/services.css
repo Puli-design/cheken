@@ -133,3 +133,45 @@
 .services .service-card p {
   transition: all 0.3s ease;
 }
+
+/* Services Cards - Hover Effect Fix */
+
+.services .services-container .service-card {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Blue background on hover */
+.services .services-container .service-card:hover {
+  background-color: #075bd8 !important;
+  border-color: #075bd8;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(7, 91, 216, 0.25);
+}
+
+/* Heading turns white */
+.services .services-container .service-card:hover h3 {
+  color: #ffffff !important;
+}
+
+/* Description turns white */
+.services .services-container .service-card:hover p {
+  color: #ffffff !important;
+}
+
+/* Icon turns white */
+.services .services-container .service-card:hover .service-icon img {
+  filter: brightness(0) invert(1);
+}
+
+/* Smooth transitions for card content */
+.services .service-card h3,
+.services .service-card p,
+.services .service-icon img {
+  transition: color 0.3s ease, filter 0.3s ease;
+}
