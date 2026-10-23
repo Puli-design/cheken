@@ -154,7 +154,29 @@ export default async function decorate(block) {
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
   const navWrapper = document.createElement('div');
-  navWrapper.className = 'nav-wrapper';
-  navWrapper.append(nav);
-  block.append(navWrapper);
+navWrapper.className = 'nav-wrapper';
+navWrapper.append(nav);
+
+// Add a top contact bar
+const topBar = document.createElement('div');
+topBar.className = 'header-top';
+topBar.innerHTML = `
+
+  <div class="header-top-inner">
+    <div class="header-contact">
+      <span>⌂ Dakra park ipsum dolor sit met, connected uk.</span>
+      <a href="tel:+812578785472">▯ +81257 8785 472</a>
+      <a href="mailto:demo@example.com">✉ demo@example.com</a>
+    </div>
+    <div class="header-social">
+      <span>◷ Open hours: 9am-6pm</span>
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="X">𝕏</a>
+      <a href="#" aria-label="Instagram">◎</a>
+    </div>
+  </div>
+`;
+
+block.append(topBar, navWrapper);
+
 }
